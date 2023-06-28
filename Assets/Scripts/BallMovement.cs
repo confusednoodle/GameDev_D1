@@ -9,6 +9,7 @@ public class BallMovement : MonoBehaviour
     // movement vars
     [SerializeField] float speed;
     private Rigidbody rigid;
+    private Vector3 inputDirection = Vector3.zero;
 
     // jump vars
     [SerializeField] float jumpSpeed;
@@ -16,32 +17,59 @@ public class BallMovement : MonoBehaviour
     private bool grounded = true;
     private bool canDoubleJump = false;
 
+    // Movement particles
+    [SerializeField] GameObject ParticleSystemContainer;
+    private ParticleSystem dustParticles;
+    private bool particlesPlaying = false;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
+        dustParticles = ParticleSystemContainer.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        ParticleSystemContainer.transform.position = transform.position;
+        inputDirection = Vector3.zero;
+
         // moving
         if (Input.GetKey(KeyCode.W))
         {
-            rigid.AddForce(Vector3.forward * speed);
+            inputDirection += Vector3.forward;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rigid.AddForce(Vector3.back * speed);
+            inputDirection += Vector3.back;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rigid.AddForce(Vector3.right * speed);
+            inputDirection += Vector3.right;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rigid.AddForce(Vector3.left * speed);
+            inputDirection += Vector3.left;
+        }
+
+        rigid.AddForce(inputDirection.normalized * speed, ForceMode.Impulse);
+
+        if (grounded && inputDirection != Vector3.zero)
+        {
+            ParticleSystemContainer.transform.rotation = Quaternion.FromToRotation(dustParticles.shape.position, -inputDirection.normalized);
+
+            if (!particlesPlaying)
+            {
+                dustParticles.Play();
+                particlesPlaying = true;
+            }
+        }
+        else
+        {
+            dustParticles.Stop();
+            particlesPlaying = false;
         }
 
         // jump + double jump
@@ -64,6 +92,7 @@ public class BallMovement : MonoBehaviour
 
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (platforms.Contains(collision.gameObject))
