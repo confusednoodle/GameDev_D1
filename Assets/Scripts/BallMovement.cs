@@ -58,7 +58,6 @@ public class BallMovement : MonoBehaviour
 
         if (grounded && inputDirection != Vector3.zero)
         {
-            Debug.Log("hi");
             ParticleSystemContainer.transform.rotation = Quaternion.FromToRotation(dustParticles.shape.position, -inputDirection.normalized);
 
             if (!particlesPlaying)
