@@ -44,7 +44,7 @@ public class BallMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && (grounded | canDoubleJump))
         {
-            rigid.AddForce
+            rigid.AddForce(Vector3.up * jumpSpeed);
         }
     }
 }
