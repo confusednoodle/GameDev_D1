@@ -31,15 +31,15 @@ public class BallMovement : MonoBehaviour
         {
             rigid.AddForce(Vector3.forward * speed);
         }
-        else if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             rigid.AddForce(Vector3.back * speed);
         }
-        else if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             rigid.AddForce(Vector3.right * speed);
         }
-        else if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             rigid.AddForce(Vector3.left * speed);
         }
@@ -61,7 +61,7 @@ public class BallMovement : MonoBehaviour
             {
                 canDoubleJump = false;
             }
-            
+
         }
     }
     private void OnCollisionEnter(Collision collision)
