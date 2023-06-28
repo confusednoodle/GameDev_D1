@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -11,6 +12,7 @@ public class BallMovement : MonoBehaviour
 
     // jump vars
     [SerializeField] float jumpSpeed;
+    [SerializeField] GameObject[] platforms;
     private bool grounded = true;
     private bool canDoubleJump = false;
 
@@ -33,7 +35,7 @@ public class BallMovement : MonoBehaviour
         {
             rigid.AddForce(Vector3.back * speed);
         }
-        else if ( Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             rigid.AddForce(Vector3.right * speed);
         }
@@ -42,9 +44,31 @@ public class BallMovement : MonoBehaviour
             rigid.AddForce(Vector3.left * speed);
         }
 
+        // jump + double jump
         if (Input.GetKeyDown(KeyCode.Space) && (grounded | canDoubleJump))
         {
-            rigid.AddForce(Vector3.up * jumpSpeed);
+            rigid.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+            if (grounded)
+            {
+                grounded = false;
+                canDoubleJump = true;
+            }
+            else if (canDoubleJump)
+            {
+                canDoubleJump = false;
+            }
+            else
+            {
+                canDoubleJump = false;
+            }
+            
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (platforms.Contains(collision.gameObject))
+        {
+            grounded = true;
         }
     }
 }

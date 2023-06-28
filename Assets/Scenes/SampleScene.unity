@@ -157,7 +157,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpSpeed: 0
+  jumpSpeed: 12
+  platforms:
+  - {fileID: 1973538986}
 --- !u!135 &505707292
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -544,7 +546,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &1973538992
 BoxCollider:
   m_ObjectHideFlags: 0
