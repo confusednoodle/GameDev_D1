@@ -9,6 +9,7 @@ public class BallMovement : MonoBehaviour
     // movement vars
     [SerializeField] float speed;
     private Rigidbody rigid;
+    private Vector3 movementDirection = Vector3.zero;
 
     // jump vars
     [SerializeField] float jumpSpeed;
@@ -16,33 +17,41 @@ public class BallMovement : MonoBehaviour
     private bool grounded = true;
     private bool canDoubleJump = false;
 
+    // Movement particles
+    private ParticleSystem particleSystem;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rigid = GetComponent<Rigidbody>();
+        particleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        movementDirection = Vector3.zero;
+
         // moving
         if (Input.GetKey(KeyCode.W))
         {
-            rigid.AddForce(Vector3.forward * speed);
+            movementDirection += Vector3.forward;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            rigid.AddForce(Vector3.back * speed);
+            movementDirection += Vector3.back;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            rigid.AddForce(Vector3.right * speed);
+            movementDirection += Vector3.right;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            rigid.AddForce(Vector3.left * speed);
+            movementDirection += Vector3.left;
         }
+
+        rigid.AddForce(movementDirection.normalized * speed, ForceMode.Impulse);
 
         // jump + double jump
         if (Input.GetKeyDown(KeyCode.Space) && (grounded | canDoubleJump))
@@ -64,6 +73,7 @@ public class BallMovement : MonoBehaviour
 
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (platforms.Contains(collision.gameObject))
