@@ -22,6 +22,10 @@ public class BallMovement : MonoBehaviour
     private ParticleSystem dustParticles;
     private bool particlesPlaying = false;
 
+    // god mode
+    private bool god = false;
+    [SerializeField] Transform ballTrans;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,23 +40,68 @@ public class BallMovement : MonoBehaviour
         ParticleSystemContainer.transform.position = transform.position;
         inputDirection = Vector3.zero;
 
+        // enable god mode
+        if (Input.GetKeyDown(KeyCode.G) && !god)
+        {
+            god = true;
+            rigid.isKinematic = true;
+        }
+        // disable god mode
+        else if (Input.GetKeyDown(KeyCode.G) && god)
+        {
+            god = false;
+            rigid.isKinematic = false;
+        }
+
         // moving
-        if (Input.GetKey(KeyCode.W))
+        // if isKinematic, forces don't apply, so god mode has to have its own movement system
+        if (god)
         {
-            inputDirection += Vector3.forward;
+            if (Input.GetKey(KeyCode.W))
+            {
+                ballTrans.position += Vector3.forward * speed * 50 * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                ballTrans.position += Vector3.back * speed * 50 * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                ballTrans.position += Vector3.right * speed * 50 * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                ballTrans.position += Vector3.left * speed * 50 * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.Q))
+            {
+                ballTrans.position += Vector3.down * speed * 50 * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.E))
+            {
+                ballTrans.position += Vector3.up * speed * 50 * Time.deltaTime;
+            }
         }
-        if (Input.GetKey(KeyCode.S))
+        else
         {
-            inputDirection += Vector3.back;
+            if (Input.GetKey(KeyCode.W))
+            {
+                inputDirection += Vector3.forward;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                inputDirection += Vector3.back;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                inputDirection += Vector3.right;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                inputDirection += Vector3.left;
+            }
         }
-        if (Input.GetKey(KeyCode.D))
-        {
-            inputDirection += Vector3.right;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            inputDirection += Vector3.left;
-        }
+        
 
         rigid.AddForce(inputDirection.normalized * speed, ForceMode.Impulse);
 
