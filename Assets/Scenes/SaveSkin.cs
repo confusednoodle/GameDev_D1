@@ -5,14 +5,16 @@ using UnityEngine;
 public class SaveSkin : MonoBehaviour
 {
     public int skinNumber;
-    // Start is called before the first frame update
-
 
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
     }
 
+    void Update()
+    {
+
+    }
     public void SetSkinNumber1()
     {
         skinNumber = 1;
