@@ -23,6 +23,11 @@ public class SceneManagment : MonoBehaviour
         {
             SceneManager.LoadScene(current);
         }
+
+        if (Input.GetKey("r"))
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 
     public void LevelOne()
@@ -39,5 +44,6 @@ public class SceneManagment : MonoBehaviour
     {
         SceneManager.LoadScene("Level 3");
     }
+
 
 }
