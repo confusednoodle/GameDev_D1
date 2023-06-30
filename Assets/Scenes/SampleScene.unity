@@ -253,6 +253,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &505707299 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5235896957567928673, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
+  m_PrefabInstance: {fileID: 5235896957129912958}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +623,10 @@ PrefabInstance:
       propertyPath: speed
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
+      propertyPath: ballTrans
+      value: 
+      objectReference: {fileID: 505707299}
     - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
       propertyPath: platforms.Array.data[0]
       value: 
