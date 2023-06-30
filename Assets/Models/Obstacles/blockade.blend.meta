@@ -3,7 +3,27 @@ guid: 03fb52dc5ab18a9088e079a816390bf3
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder
+    second: {fileID: 2100000, guid: ec4daf742769d52699ac5dd0dce996e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder_red
+    second: {fileID: 2100000, guid: ba8c39ae6a647369f9c87e9be215114f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inner
+    second: {fileID: 2100000, guid: 1d32d2079dfe1c7d487bd1c777e7ac54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Outer
+    second: {fileID: 2100000, guid: 1ea26955a001dfab99b13ecf441c106e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

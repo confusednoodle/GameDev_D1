@@ -3,7 +3,17 @@ guid: 05fe378a358b952b080041c4d660b210
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ads
+    second: {fileID: 2100000, guid: 87c4f46d10ceb2c71a7c969ddf041860, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TopAndBottom
+    second: {fileID: 2100000, guid: d91b49219a1483ef6ad90232d8095c59, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
