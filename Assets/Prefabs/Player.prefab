@@ -4929,6 +4929,7 @@ MonoBehaviour:
   platforms:
   - {fileID: 0}
   ParticleSystemContainer: {fileID: 2390078399928821066}
+  ballTrans: {fileID: 5235896957567928673}
 --- !u!54 &5235896957567928670
 Rigidbody:
   m_ObjectHideFlags: 0
