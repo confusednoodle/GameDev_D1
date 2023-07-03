@@ -25,6 +25,7 @@ public class UserInterface : MonoBehaviour
 
     void Update()
     {
-        
+        currentTime += Time.deltaTime;
+        currentTimeText.text = "Time: " + currentTime.ToString("0.00");
     }
 }
