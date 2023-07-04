@@ -26,6 +26,9 @@ public class BallMovement : MonoBehaviour
     private bool god = false;
     [SerializeField] Transform ballTrans;
 
+    // item count
+    public int itemCount = 0;
+    [SerializeField] AudioSource itemSound;
 
     // Start is called before the first frame update
     void Start()
@@ -147,6 +150,16 @@ public class BallMovement : MonoBehaviour
         if (platforms.Contains(collision.gameObject))
         {
             grounded = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Item")
+        {
+            itemCount += 1;
+            itemSound.Play();
+            Debug.Log(itemCount.ToString());
         }
     }
 }
