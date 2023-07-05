@@ -17,6 +17,8 @@ public class UserInterface : MonoBehaviour
     public float highscore = 0.00f; //needs to be saved between scene loads
     [SerializeField] int maxItems;
 
+    [SerializeField] BallMovement playerScript;
+
     void Start()
     {
         itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString(); //reset item count when restarting scene
@@ -25,6 +27,14 @@ public class UserInterface : MonoBehaviour
 
     void Update()
     {
+        if (itemCount == maxItems)
+        {
+            Debug.Log("color");
+            itemCountText.color = new Color(127, 100, 100, 100);
+        }
+
+        itemCount = playerScript.itemCount;
+        itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString(); 
         currentTime += Time.deltaTime;
         currentTimeText.text = "Time: " + currentTime.ToString("0.00");
     }
