@@ -22,6 +22,8 @@ public class UserInterface : MonoBehaviour
 
     void Start()
     {
+        highscore = PlayerPrefs.GetFloat("highscore");
+        highscoreText.text = highscore.ToString("0.00");
         itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString(); //reset item count when restarting scene
         currentTimeText.text = "Time: " + currentTime.ToString(); //reset time when restarting scene
     }

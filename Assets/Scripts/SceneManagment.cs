@@ -7,6 +7,7 @@ public class SceneManagment : MonoBehaviour
 {
     [SerializeField] int min;
     [SerializeField] GameObject player;
+    [SerializeField] UserInterface uiScript;
 
     private string current;
 
@@ -22,6 +23,7 @@ public class SceneManagment : MonoBehaviour
         // reset scene upon ball being lost to the void
         if (player.transform.position.y < min)
         {
+            PlayerPrefs.SetFloat("highscore", uiScript.highscore);
             SceneManager.LoadScene(current);
         }
 
