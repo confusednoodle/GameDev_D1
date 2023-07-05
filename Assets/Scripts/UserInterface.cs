@@ -18,10 +18,16 @@ public class UserInterface : MonoBehaviour
     public bool completed = false;
     [SerializeField] int maxItems;
 
+    //access to other scripts
     [SerializeField] BallMovement playerScript;
+    [SerializeField] GoalBehaviour goalScript;
+
+    //music and sounds
+    public AudioSource gameMusic;
 
     void Start()
     {
+        gameMusic.Play();
         highscore = PlayerPrefs.GetFloat("highscore");
         highscoreText.text = highscore.ToString("0.00");
         itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString(); //reset item count when restarting scene
@@ -38,7 +44,11 @@ public class UserInterface : MonoBehaviour
 
         itemCount = playerScript.itemCount;
         itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString(); 
-        currentTime += Time.deltaTime;
-        currentTimeText.text = "Time: " + currentTime.ToString("0.00");
+
+        if(goalScript.reachedGoal == false)
+        {
+            currentTime += Time.deltaTime;
+            currentTimeText.text = "Time: " + currentTime.ToString("0.00");
+        }
     }
 }

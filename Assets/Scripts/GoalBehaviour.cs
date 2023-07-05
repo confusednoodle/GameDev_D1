@@ -7,17 +7,20 @@ public class GoalBehaviour : MonoBehaviour
 {
     [SerializeField] UserInterface uiScript;
     [SerializeField] AudioSource goalSound;
+    public bool reachedGoal = false;
 
-    private void OnCollisionEnter(Collision col)
+    private void OnTriggerEnter(Collider col)
     {
         if (uiScript.completed == true)
         {
+            reachedGoal = true;
             StartCoroutine(WaitForMenu());
         }
     }
 
     private IEnumerator WaitForMenu()
     {
+        uiScript.gameMusic.Stop();
         goalSound.Play(); //plays goal music track
         if (uiScript.highscore > uiScript.currentTime)
         {
