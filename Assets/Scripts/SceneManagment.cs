@@ -9,6 +9,7 @@ public class SceneManagment : MonoBehaviour
     [SerializeField] GameObject player;
 
     private string current;
+
     // Start is called before the first frame update
     void Start()
     {
