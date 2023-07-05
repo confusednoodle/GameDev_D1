@@ -15,6 +15,7 @@ public class UserInterface : MonoBehaviour
     public int itemCount = 0;
     public float currentTime = 0.00f;
     public float highscore = 0.00f; //needs to be saved between scene loads
+    private bool completed = false;
     [SerializeField] int maxItems;
 
     [SerializeField] BallMovement playerScript;
@@ -27,10 +28,11 @@ public class UserInterface : MonoBehaviour
 
     void Update()
     {
-        if (itemCount == maxItems)
+        if (itemCount == maxItems && completed == false)
         {
             Debug.Log("color");
-            itemCountText.color = new Color(127, 100, 100, 100);
+            itemCountText.color = new Color(0.00f, 1.00f, 0.1216f, 1.00f);
+            completed = true;
         }
 
         itemCount = playerScript.itemCount;
