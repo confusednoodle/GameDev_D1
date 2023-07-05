@@ -159,7 +159,6 @@ public class BallMovement : MonoBehaviour
         {
             itemCount += 1;
             itemSound.Play();
-            Debug.Log(itemCount.ToString());
         }
     }
 }
