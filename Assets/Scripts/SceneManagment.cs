@@ -7,8 +7,10 @@ public class SceneManagment : MonoBehaviour
 {
     [SerializeField] int min;
     [SerializeField] GameObject player;
+    [SerializeField] UserInterface uiScript;
 
     private string current;
+
     // Start is called before the first frame update
     void Start()
     {
