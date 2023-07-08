@@ -108,7 +108,7 @@ public class BallMovement : MonoBehaviour
                 inputDirection += Vector3.left;
             }
         }
-        
+
 
         rigid.AddForce(inputDirection.normalized * speed, ForceMode.Impulse);
 
