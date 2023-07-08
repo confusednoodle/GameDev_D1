@@ -29,6 +29,10 @@ public class BallMovement : MonoBehaviour
     // item count
     public int itemCount = 0;
     [SerializeField] AudioSource itemSound;
+    // reached goal determination
+    [SerializeField] GameObject goalPlatform;
+    [SerializeField] GameObject sceneManager;
+
 
     // Start is called before the first frame update
     void Start()
@@ -151,6 +155,10 @@ public class BallMovement : MonoBehaviour
         {
             grounded = true;
         }
+        if (collision.gameObject == goalPlatform)
+        {
+            sceneManager.GetComponent<SceneManagment>().reachedGoal = true;
+        }
     }
 
     private void OnTriggerEnter(Collider col)
@@ -161,4 +169,5 @@ public class BallMovement : MonoBehaviour
             itemSound.Play();
         }
     }
+
 }
