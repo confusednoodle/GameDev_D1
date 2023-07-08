@@ -9,6 +9,9 @@ public class SceneManagment : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] UserInterface uiScript;
 
+    // the value of this has to be determined in ball movement since it is on the ball
+    public bool reachedGoal = false;
+
     private string current;
 
     // Start is called before the first frame update
@@ -30,6 +33,12 @@ public class SceneManagment : MonoBehaviour
         {
             SceneManager.LoadScene("Main Menu");
         }
+
+        if (reachedGoal)
+        {
+            reachedGoal = false;
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 
     public void LevelOne()
@@ -46,6 +55,5 @@ public class SceneManagment : MonoBehaviour
     {
         SceneManager.LoadScene("Level 3");
     }
-
-
 }
+

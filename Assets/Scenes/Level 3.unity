@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 387311416}
   - component: {fileID: 387311415}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: goalPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1400,7 +1400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &593312044
 Transform:
   m_ObjectHideFlags: 0
@@ -1768,6 +1768,14 @@ PrefabInstance:
       propertyPath: speed
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
+      propertyPath: goalPlatform
+      value: 
+      objectReference: {fileID: 387311413}
+    - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
+      propertyPath: sceneManager
+      value: 
+      objectReference: {fileID: 2075268355}
     - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
       propertyPath: platforms.Array.size
       value: 16
@@ -2152,7 +2160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1543411085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2866,6 +2874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: -10
   player: {fileID: 1095218100}
+  reachedGoal: 0
 --- !u!4 &2075268357
 Transform:
   m_ObjectHideFlags: 0
