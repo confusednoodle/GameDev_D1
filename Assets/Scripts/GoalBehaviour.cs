@@ -9,7 +9,7 @@ public class GoalBehaviour : MonoBehaviour
     [SerializeField] AudioSource goalSound;
     public bool reachedGoal = false;
 
-    private void OnTriggerEnter(Collider col)
+    private void OnCollisionEnter(Collision col)
     {
         if (uiScript.completed == true)
         {
