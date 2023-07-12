@@ -17,6 +17,11 @@ public class UserInterface : MonoBehaviour
     public float highscore = 0.00f; //needs to be saved between scene loads
     public bool completed = false;
     [SerializeField] int maxItems;
+    public int playerSkin;
+    [SerializeField] Material skin1;
+    [SerializeField] Material skin2;
+    [SerializeField] Material skin3;
+    [SerializeField] GameObject player;
 
     //access to other scripts
     [SerializeField] BallMovement playerScript;
@@ -27,6 +32,25 @@ public class UserInterface : MonoBehaviour
 
     void Start()
     {
+    
+        playerSkin = PlayerPrefs.GetInt("skin");
+        Debug.Log(playerSkin);
+        Debug.LogWarning(skin3);
+        if (playerSkin == 1)
+        {
+            player.GetComponent<MeshRenderer>().material = skin1;
+        }
+
+        if (playerSkin == 2)
+        {
+            player.GetComponent<MeshRenderer>().material = skin2;
+        }
+
+        if (playerSkin == 3)
+        {
+            player.GetComponent<MeshRenderer>().material = skin3;
+        }
+
         gameMusic.Play();
         highscore = PlayerPrefs.GetFloat("highscore");
         highscoreText.text = highscore.ToString("0.00");

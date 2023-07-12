@@ -7,9 +7,9 @@ public class SceneManagment : MonoBehaviour
 {
     [SerializeField] int min;
     [SerializeField] GameObject player;
-    [SerializeField] UserInterface uiScript;
 
     private string current;
+
 
     // Start is called before the first frame update
     void Start()
@@ -46,4 +46,20 @@ public class SceneManagment : MonoBehaviour
     {
         SceneManager.LoadScene("Level 3");
     }
+
+    public void SkinOne()
+    {
+        PlayerPrefs.SetInt("skin", 1);
+    }
+
+    public void SkinTwo()
+    {
+        PlayerPrefs.SetInt("skin", 2);
+    }
+
+    public void SkinThree()
+    {
+        PlayerPrefs.SetInt("skin", 3);
+    }
+
 }
