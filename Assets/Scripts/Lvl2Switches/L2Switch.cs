@@ -7,6 +7,7 @@ public class L2Switch : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] Material colour;
     private bool pressed = false;
+    [SerializeField] AudioSource sound;
 
     [SerializeField] GameObject[] toActivate;
 
@@ -29,6 +30,7 @@ public class L2Switch : MonoBehaviour
     {
         if ((collision.gameObject == player) && !pressed)
         {
+            sound.Play();
             pressed = true;
             transform.position -= new Vector3(0, 0.09f, 0);
             colour.color = new Color(0, 1, 0);

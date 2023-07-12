@@ -8,6 +8,7 @@ public class Lvl3RightSwitch : MonoBehaviour
     [SerializeField] Transform switchTrans;
     [SerializeField] Material colour;
     private bool pressed = false;
+    [SerializeField] AudioSource sound;
 
     [SerializeField] GameObject toActivate;
 
@@ -30,6 +31,7 @@ public class Lvl3RightSwitch : MonoBehaviour
     {
         if ((collision.gameObject == player) && !pressed)
         {
+            sound.Play();
             pressed = true;
             switchTrans.position -= new Vector3(0, 0.09f, 0);
             colour.color = new Color(0, 1, 0);
