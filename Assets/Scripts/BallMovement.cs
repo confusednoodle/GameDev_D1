@@ -29,8 +29,6 @@ public class BallMovement : MonoBehaviour
     // item count
     public int itemCount = 0;
     [SerializeField] AudioSource itemSound;
-    // reached goal determination
-    [SerializeField] GameObject goalPlatform;
     [SerializeField] GameObject sceneManager;
 
 
@@ -154,10 +152,6 @@ public class BallMovement : MonoBehaviour
         if (platforms.Contains(collision.gameObject))
         {
             grounded = true;
-        }
-        if (collision.gameObject == goalPlatform)
-        {
-            sceneManager.GetComponent<SceneManagment>().reachedGoal = true;
         }
     }
 
