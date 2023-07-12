@@ -35,10 +35,8 @@ public class UserInterface : MonoBehaviour
 
     void Start()
     {
-    
         playerSkin = PlayerPrefs.GetInt("skin");
-        Debug.Log(playerSkin);
-        Debug.LogWarning(skin3);
+
         if (playerSkin == 1)
         {
             player.GetComponent<MeshRenderer>().material = skin1;
@@ -86,9 +84,9 @@ public class UserInterface : MonoBehaviour
         }
 
         itemCount = playerScript.itemCount;
-        itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString(); 
+        itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString();
 
-        if(goalScript.reachedGoal == false)
+        if (goalScript.reachedGoal == false)
         {
             currentTime += Time.deltaTime;
             currentTimeText.text = "Time: " + currentTime.ToString("0.00");
