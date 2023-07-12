@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30322725, g: 0.12813418, b: 0.342678, a: 1}
+  m_IndirectSpecularColor: {r: 0.30289465, g: 0.12788615, b: 0.34251642, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -995,7 +995,6 @@ MonoBehaviour:
   min: -5
   player: {fileID: 1487821781}
   uiScript: {fileID: 0}
-  reachedGoal: 0
 --- !u!4 &481567885
 Transform:
   m_ObjectHideFlags: 0
@@ -2601,7 +2600,7 @@ PrefabInstance:
       objectReference: {fileID: 1487821792}
     - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
       propertyPath: platforms.Array.size
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
       propertyPath: platforms.Array.data[0]
@@ -2678,7 +2677,11 @@ PrefabInstance:
     - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
       propertyPath: platforms.Array.data[18]
       value: 
-      objectReference: {fileID: 209878187}
+      objectReference: {fileID: 552980043}
+    - target: {fileID: 5235896957567928677, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
+      propertyPath: platforms.Array.data[19]
+      value: 
+      objectReference: {fileID: 521683289}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
 --- !u!1 &1487821781 stripped
