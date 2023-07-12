@@ -13,6 +13,7 @@ public class Lvl3MidSwitch : MonoBehaviour
     [SerializeField] Transform switchTrans;
     [SerializeField] Material colour;
     private bool pressed = false;
+    [SerializeField] AudioSource sound;
 
     [SerializeField] GameObject goal;
     [SerializeField] GameObject[] toDeactivate;
@@ -40,6 +41,7 @@ public class Lvl3MidSwitch : MonoBehaviour
         // what happens on first press
         if ((collision.gameObject == player) && !pressed)
         {
+            sound.Play();
             pressed = true;
             // avoid y fighting
             switchTrans.position -= new Vector3(0, 0.09f, 0);
