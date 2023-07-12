@@ -10,14 +10,10 @@ public class SceneManagment : MonoBehaviour
 
     private string current;
 
-    //music for main menu
-    [SerializeField] AudioSource menuMusic;
-
 
     // Start is called before the first frame update
     void Start()
     {
-        menuMusic.Play();
         current = SceneManager.GetActiveScene().name;
     }
 

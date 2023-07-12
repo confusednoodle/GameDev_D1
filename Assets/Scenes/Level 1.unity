@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30289465, g: 0.12788615, b: 0.34251642, a: 1}
+  m_IndirectSpecularColor: {r: 0.30322725, g: 0.12813418, b: 0.342678, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -983,7 +983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: -5
   player: {fileID: 1487821781}
-  uiScript: {fileID: 0}
+  menuMusic: {fileID: 0}
 --- !u!4 &481567885
 Transform:
   m_ObjectHideFlags: 0
@@ -3095,6 +3095,11 @@ MonoBehaviour:
   highscore: 0
   completed: 0
   maxItems: 10
+  playerSkin: 0
+  skin1: {fileID: 2100000, guid: e069e0d538bee6e41b086d5871583e2e, type: 2}
+  skin2: {fileID: 2100000, guid: dbb920a33816c7f4d802d0ca1dcfe490, type: 2}
+  skin3: {fileID: 2100000, guid: 79b1eee1afd02cc43b526500ea459b0c, type: 2}
+  player: {fileID: 1487821781}
   playerScript: {fileID: 1487821790}
   goalScript: {fileID: 3029428648528137723}
   gameMusic: {fileID: 1572814604}

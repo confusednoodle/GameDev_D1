@@ -1475,11 +1475,23 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1724206237}
         m_TargetAssemblyTypeName: SceneManagment, Assembly-CSharp
-        m_MethodName: LevelThree
+        m_MethodName: SkinThree
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: SceneManagment, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1775,7 +1787,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   min: 0
   player: {fileID: 5235896957567928676, guid: bf0fdc8470ae67c2d8641bb0a888106a, type: 3}
-  menuMusic: {fileID: 1724206238}
 --- !u!82 &1724206238
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1787,7 +1798,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a2b39eb35e6876d479f44a5a254930d6, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

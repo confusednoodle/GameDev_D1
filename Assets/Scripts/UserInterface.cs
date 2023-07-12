@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.ComponentModel.Design.Serialization;
 
 public class UserInterface : MonoBehaviour
 {
@@ -33,8 +32,10 @@ public class UserInterface : MonoBehaviour
 
     void Start()
     {
+    
         playerSkin = PlayerPrefs.GetInt("skin");
-
+        Debug.Log(playerSkin);
+        Debug.LogWarning(skin3);
         if (playerSkin == 1)
         {
             player.GetComponent<MeshRenderer>().material = skin1;

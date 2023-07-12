@@ -31,9 +31,6 @@ public class BallMovement : MonoBehaviour
     [SerializeField] AudioSource itemSound;
     [SerializeField] GameObject sceneManager;
 
-    // obstacles hit sound
-    [SerializeField] AudioSource obstacleSound;
-
 
     // Start is called before the first frame update
     void Start()
