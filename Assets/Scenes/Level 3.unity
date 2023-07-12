@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414729, b: 0.121078685, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028328, g: 0.22571328, b: 0.3069218, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 3a7fffd0446b1bed0beaf22ceeafdc30, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -140,7 +140,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &13665599
 Transform:
@@ -305,6 +305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -372,6 +376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -433,6 +441,10 @@ PrefabInstance:
     - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_Name
       value: Cheese Item (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
@@ -568,7 +580,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &216294365
 BoxCollider:
@@ -658,6 +670,10 @@ PrefabInstance:
     - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_Name
       value: Cheese Item (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
@@ -792,7 +808,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &362489757
 Transform:
@@ -883,6 +899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -954,7 +974,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &387311414
 Transform:
@@ -1379,7 +1399,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &392675462
 BoxCollider:
@@ -1476,7 +1496,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &423033498
 Transform:
@@ -1579,7 +1599,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &431700986
 BoxCollider:
@@ -1676,7 +1696,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &445007837
 Transform:
@@ -1773,7 +1793,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &505323716
 Transform:
@@ -1933,6 +1953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1994,6 +2018,10 @@ PrefabInstance:
     - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_Name
       value: Cheese Item (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
@@ -2063,7 +2091,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &544039157
 BoxCollider:
@@ -2160,7 +2188,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &549850154
 Transform:
@@ -2257,7 +2285,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &552837750
 Transform:
@@ -2354,7 +2382,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &559280682
 BoxCollider:
@@ -2513,7 +2541,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 0
 --- !u!4 &593312044
 Transform:
@@ -2555,6 +2583,10 @@ PrefabInstance:
     - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_Name
       value: Cheese Item (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
@@ -2904,7 +2936,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &971833150
 Transform:
@@ -2934,7 +2966,7 @@ Transform:
   - {fileID: 95137612}
   - {fileID: 371165509}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &987748456
 GameObject:
@@ -2950,7 +2982,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 0
 --- !u!4 &987748457
 Transform:
@@ -2990,7 +3022,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &1003632079
 BoxCollider:
@@ -3084,7 +3116,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1087042441
 Transform:
@@ -3241,7 +3273,7 @@ RectTransform:
   - {fileID: 898463767}
   - {fileID: 387928282}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3360,6 +3392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3429,7 +3465,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &1221022644
 BoxCollider:
@@ -3507,7 +3543,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1221022648
 MonoBehaviour:
@@ -3794,7 +3830,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1261806901
 Transform:
@@ -3889,6 +3925,10 @@ PrefabInstance:
     - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_Name
       value: Cheese Item (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
@@ -4012,6 +4052,10 @@ PrefabInstance:
     - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_Name
       value: Cheese Item (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
@@ -4155,7 +4199,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1358750496
 Transform:
@@ -4252,7 +4296,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &1406790367
 BoxCollider:
@@ -4343,6 +4387,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4405,6 +4453,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -4456,6 +4508,100 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
   m_PrefabInstance: {fileID: 1474442171}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1499652606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499652608}
+  - component: {fileID: 1499652607}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1499652607
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499652606}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 2
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1499652608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499652606}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &1532098519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4543,7 +4689,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 0
 --- !u!114 &1543411085
 MonoBehaviour:
@@ -4639,7 +4785,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1551716619
 PrefabInstance:
@@ -4728,7 +4874,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &1554266426
 BoxCollider:
@@ -4949,6 +5095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese Item (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -5015,7 +5165,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!114 &1740060924
 MonoBehaviour:
@@ -5049,7 +5199,7 @@ Transform:
   - {fileID: 1358750496}
   - {fileID: 505323716}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1794897286
 PrefabInstance:
@@ -5133,7 +5283,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1803952474
 Transform:
@@ -5230,7 +5380,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &1815438659
 BoxCollider:
@@ -5447,7 +5597,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1913771049
 Transform:
@@ -5465,7 +5615,7 @@ Transform:
   - {fileID: 987748457}
   - {fileID: 593312044}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2014136792
 PrefabInstance:
@@ -5537,37 +5687,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6522325210688064777, guid: 36db4917d70a7ba84a9c63e53346cadf, type: 3}
   m_PrefabInstance: {fileID: 388006790}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2036134364
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2036134365}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2036134365
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2036134364}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &2069815003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5578,6 +5697,10 @@ PrefabInstance:
     - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_Name
       value: Cheese Item (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356531164753964489, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7356531164754457065, guid: 42406224ccfff034b8bd5ae668df8940, type: 3}
       propertyPath: m_RootOrder
@@ -5662,7 +5785,6 @@ MonoBehaviour:
   min: -10
   player: {fileID: 1095218100}
   uiScript: {fileID: 0}
-  reachedGoal: 0
 --- !u!4 &2075268357
 Transform:
   m_ObjectHideFlags: 0
@@ -5676,7 +5798,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2083541132
 GameObject:
@@ -5830,7 +5952,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &2118513093
 BoxCollider:
