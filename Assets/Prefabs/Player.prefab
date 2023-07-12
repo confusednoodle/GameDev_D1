@@ -4924,12 +4924,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 815aaf9e8fe3aee499427e45c5668c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.7
   jumpSpeed: 12
   platforms:
   - {fileID: 0}
   ParticleSystemContainer: {fileID: 2390078399928821066}
   ballTrans: {fileID: 5235896957567928673}
+  itemCount: 0
+  itemSound: {fileID: 0}
+  goalPlatform: {fileID: 0}
+  sceneManager: {fileID: 0}
 --- !u!54 &5235896957567928670
 Rigidbody:
   m_ObjectHideFlags: 0
