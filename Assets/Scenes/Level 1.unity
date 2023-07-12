@@ -548,7 +548,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d0a1553f545cf342a305dcc1c339b73, type: 2}
+  - {fileID: 2100000, guid: 346af2b546d342bfc8cfecdb6ee0ffe4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -592,7 +592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1487821781}
   switchTrans: {fileID: 213593749}
-  colour: {fileID: 2100000, guid: 2d0a1553f545cf342a305dcc1c339b73, type: 2}
+  colour: {fileID: 2100000, guid: 346af2b546d342bfc8cfecdb6ee0ffe4, type: 2}
   toActivate: {fileID: 604182713}
 --- !u!1001 &218450273
 PrefabInstance:
@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1487821781}
   switchTrans: {fileID: 1072075020}
-  colour: {fileID: 2100000, guid: 2d0a1553f545cf342a305dcc1c339b73, type: 2}
+  colour: {fileID: 2100000, guid: 0e2107638f786465ebb80e709f0b53cd, type: 2}
   movingPlatform: {fileID: 632921912}
   speed: 2
   distance: 20
@@ -2005,7 +2005,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2d0a1553f545cf342a305dcc1c339b73, type: 2}
+  - {fileID: 2100000, guid: 0e2107638f786465ebb80e709f0b53cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4009,7 +4009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1487821781}
   switchTrans: {fileID: 1848927870}
-  colour: {fileID: 2100000, guid: fd38dac57a400234d9d9000235ad26cb, type: 2}
+  colour: {fileID: 2100000, guid: 14fb41bcf59df44fc9ff1bc1f1ca1119, type: 2}
   toActivate: {fileID: 996471730}
 --- !u!65 &1848927867
 BoxCollider:
@@ -4044,7 +4044,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fd38dac57a400234d9d9000235ad26cb, type: 2}
+  - {fileID: 2100000, guid: 14fb41bcf59df44fc9ff1bc1f1ca1119, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
