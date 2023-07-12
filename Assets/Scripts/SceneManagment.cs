@@ -33,12 +33,6 @@ public class SceneManagment : MonoBehaviour
         {
             SceneManager.LoadScene("Main Menu");
         }
-
-        if (reachedGoal)
-        {
-            reachedGoal = false;
-            SceneManager.LoadScene("Main Menu");
-        }
     }
 
     public void LevelOne()

@@ -155,10 +155,6 @@ public class BallMovement : MonoBehaviour
         {
             grounded = true;
         }
-        if (collision.gameObject == goalPlatform)
-        {
-            sceneManager.GetComponent<SceneManagment>().reachedGoal = true;
-        }
     }
 
     private void OnTriggerEnter(Collider col)
