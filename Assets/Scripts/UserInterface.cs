@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UserInterface : MonoBehaviour
 {
@@ -14,7 +15,9 @@ public class UserInterface : MonoBehaviour
     //ui variables
     public int itemCount = 0;
     public float currentTime = 0.00f;
-    public float highscore = 0.00f; //needs to be saved between scene loads
+    public float highscore1 = 0.00f;
+    public float highscore2 = 0.00f;
+    public float highscore3 = 0.00f;
     public bool completed = false;
     [SerializeField] int maxItems;
     public int playerSkin;
@@ -52,8 +55,24 @@ public class UserInterface : MonoBehaviour
         }
 
         gameMusic.Play();
-        highscore = PlayerPrefs.GetFloat("highscore");
-        highscoreText.text = highscore.ToString("0.00");
+        if (SceneManager.GetActiveScene().name == "Level 1")
+        {
+            highscore1 = PlayerPrefs.GetFloat("highscore1");
+            highscoreText.text = highscore1.ToString("0.00");
+        }
+
+        if (SceneManager.GetActiveScene().name == "Level 2")
+        {
+            highscore2 = PlayerPrefs.GetFloat("highscore2");
+            highscoreText.text = highscore2.ToString("0.00");
+        }
+
+        if (SceneManager.GetActiveScene().name == "Level 3")
+        {
+            highscore3 = PlayerPrefs.GetFloat("highscore3");
+            highscoreText.text = highscore3.ToString("0.00");
+        }
+
         itemCountText.text = "Collected: " + itemCount.ToString() + "/" + maxItems.ToString(); //reset item count when restarting scene
         currentTimeText.text = "Time: " + currentTime.ToString(); //reset time when restarting scene
     }
