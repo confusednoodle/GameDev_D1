@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ParticleSystem: {fileID: 1751344538995259750}
   Renderer: {fileID: 7356531164756226825}
+  Collider: {fileID: 7356531165626287003}
 --- !u!198 &1751344538995259750
 ParticleSystem:
   m_ObjectHideFlags: 0

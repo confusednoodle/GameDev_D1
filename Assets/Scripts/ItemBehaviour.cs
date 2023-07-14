@@ -6,6 +6,7 @@ public class ItemBehaviour : MonoBehaviour
 {
     [SerializeField] ParticleSystem ParticleSystem;
     [SerializeField] MeshRenderer Renderer;
+    [SerializeField] BoxCollider Collider;
 
     private void OnTriggerEnter(Collider col)
     {
@@ -15,6 +16,7 @@ public class ItemBehaviour : MonoBehaviour
     IEnumerator StartDestruction()
     {
         Renderer.enabled = false;
+        Collider.enabled = false;
         ParticleSystem.Play();
         yield return new WaitForSeconds(1.5f);
         Destroy(this.gameObject);
