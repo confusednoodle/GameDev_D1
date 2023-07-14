@@ -24,7 +24,7 @@ public class GoalBehaviour : MonoBehaviour
         goalSound.Play(); //plays goal music track
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
-            if (uiScript.highscore1 > uiScript.currentTime)
+            if (uiScript.highscore1 > uiScript.currentTime || uiScript.highscore1 <= 0)
             {
                 PlayerPrefs.SetFloat("highscore1", uiScript.currentTime); //sets new highscore
             }
@@ -32,7 +32,7 @@ public class GoalBehaviour : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level 2")
         {
-            if (uiScript.highscore2 > uiScript.currentTime)
+            if (uiScript.highscore2 > uiScript.currentTime || uiScript.highscore2 <= 0)
             {
                 PlayerPrefs.SetFloat("highscore2", uiScript.currentTime); //sets new highscore
             }
@@ -40,7 +40,7 @@ public class GoalBehaviour : MonoBehaviour
 
         if (SceneManager.GetActiveScene().name == "Level 3")
         {
-            if (uiScript.highscore3 > uiScript.currentTime)
+            if (uiScript.highscore3 > uiScript.currentTime || uiScript.highscore3 <= 0)
             {
                 PlayerPrefs.SetFloat("highscore3", uiScript.currentTime); //sets new highscore
             }
